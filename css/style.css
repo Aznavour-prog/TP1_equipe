@@ -15,9 +15,11 @@ header {
 
 main {
     border:3px solid black;
+    background-color:whitesmoke;
 
 }
 
 footer {
     border:3px solid black;
+    background-color:gainsboro;
 }
