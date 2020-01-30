@@ -1,125 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercice #1</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Test git</title>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One|Roboto&display=swap" rel="stylesheet">
+   
 </head>
 
-<header>
-    <h1>Nouveau header</h1>
-    <h2>header h2</h2>
-    <nav id='menu'>
-        <input type="text" id="inputRecherche" placeholder="recherche ici">
-        <input id="checkMenu" type="checkbox">
-        <label id="btnMenu" for="checkMenu">&#9776;</label>
-        <ul >
-            <li><a href="">Lorem</a></li>
-            <li><a href="">Vero</a></li>
-            <li><a href="">Aperiam</a></li>
-            <li><a href="">Reprehenderit</a></li>
-            <li><a href="">Incidunt</a></li>
-            <li><a href="">Est</a></li>
-        </ul>
-
-
-</nav>
-</header>
 <body>
-    <main>
-<p> Dans section Ecole :
-        
-    1 Set-Location -literalPath 'C:\Users\e1424017\Desktop\ecole'
-    2 git init
-    3 git status
-    4 git config --global core.editor "code -- wait"
-    5 git config --global -e
-    6 get history
-    7 Get-History
-    8 Get-History
-    9 dir
-   10 dir
-   11 git add --all
-   12 git status
-   13 git commit -m "debut fichier index.htm et style.css"
-   14 git status
-   15 git status
-   16 git add .
-   17 git status
-   18 hit status -s
-   19 git status -s
-   20 git commit -m "E"
-   21 git status
-   22 git remote add origin https://github.com/Aznavour-prog/exec3.git
-   23 git remote -v
-   24 git push -u origin master
-   25 git push -u origin master
-   26 git pull origin master
-   27 git status
-   28 git add .
-   29 git commit -m "Couleur de background dans le header"
-</p><br>
-       <p>Dans section Maison :
-
-        1 Set-Location -literalPath 'C:\Users\e1424017\Desktop\maison'
-         2 git init
-        3 git status
-   4 dir
-   5 dir
-   6 git remote add origin https://github.com/Aznavour-prog/exec3.git
-   7 git remove -v
-   8 git remote -v
-   9 git pull origin master
-  10 git status
-  11 git add .
-  12 git status
-  13 git commit -m "M - h1 dans le header"
-  14 git status
-  15 git status
-  16 git add .
-  17 git commit -m "M - h2 dans le header avec sous-titre"
-  18 git status
-  19 git add .
-  20 git status
-  21 git commit -m "Une bordure autour du header"
-  22 git push -u origin master</p>
-        
-  <p>contenu ajouté école</p><br>
-  <p>liste de commits dans école</p><br>
-  <p>0562b47 (HEAD -> master, origin/master) Un menu a été ajouté dans le header
-    e21caf3 Un contenu a été ajouté dans main et footer
-    32dfebd Du contenu est ajouté dans le footer
-    8f8e90e Bordure autour du main et du footer (rajouté aussi footer dans html)
-    584452c Du texte est ajouté dans le main
-    f7fc96a Couleur de background dans le header
-    134f27c Une bordure autour du header
-    3fbb8ba M - h2 dans le header avec sous-titre
-    ab0c084 M - h1 dans le header
-    2f75a1a E
-    ee29a60 debut fichier index.htm et style.css
-    PS C:\Users\e1424017\Desktop\ecole></p>
-    <br>
-    <p>liste de commits dans maison</p><br>
-    <p>b9fdb48 (HEAD -> master) Une couleur de background pour le main et pour le footer
-        0562b47 (origin/master) Un menu a été ajouté dans le header
-        e21caf3 Un contenu a été ajouté dans main et footer
-        32dfebd Du contenu est ajouté dans le footer
-        8f8e90e Bordure autour du main et du footer (rajouté aussi footer dans html)
-        584452c Du texte est ajouté dans le main
-        f7fc96a Couleur de background dans le header
-        134f27c Une bordure autour du header
-        3fbb8ba M - h2 dans le header avec sous-titre
-        ab0c084 M - h1 dans le header
-        2f75a1a E
-        ee29a60 debut fichier index.htm et style.css
-        PS C:\Users\e1424017\Desktop\maison></p>
-    </main>
+    <header>
+        <section class="global">
+            <h1>Exercice #1</h1>
+            <h2>Introduction à Sass</h2>
+        </section>
+    </header>
     
+    
+    <div id='entete'><div><p class='small-uppercase'>Test pour l'entete</p></div></div>
+    <input id="checkRecherche" type="checkbox">
+    <label id="btnRecherche" for="checkRecherche">&#128269;</label>
+    <nav id='menu'>
+            <input type="text" id="inputRecherche" placeholder="recherche ici">
+            <input id="checkMenu" type="checkbox">
+            <label id="btnMenu" for="checkMenu">&#9776;</label>
+            <ul >
+                <li><a href="">Lorem</a></li>
+                <li><a href="">Vero</a></li>
+                <li><a href="">Aperiam</a></li>
+                <li><a href="">Reprehenderit</a></li>
+                <li><a href="">Incidunt</a></li>
+                <li><a href="">Est</a></li>
+            </ul>
+
+
+    </nav>
+    <main>
+        <section class="global">
+       
+            <h1>SCSS, Sassy CSS et Sass</h1>
+
+<p>
+La différence est l'interface utilisateur. Sous l'extérieur textuel, ils sont identiques. C'est pourquoi les fichiers
+sass et scss peuvent s'importer. </p>
+<p>
+En fait, Sass a quatre analyseurs syntaxiques: scss, sass, CSS et LESS. Tous ces
+éléments convertissent une syntaxe différente en une arborescence de syntaxe abstraite qui est ensuite traitée en sortie
+CSS ou même dans l'un des autres formats via l'outil sass-convert.
+</p>
+<p>
+Utilisez la syntaxe que vous préférez, les deux sont entièrement pris en charge et vous pouvez les changer plus tard si
+vous changez d'avis.
+</p>
+<p>
+    L'avantage du format SCSS c'est que l'on peut directement importer un fichier CSS et il sera considéré directement comme du SCSS par le compilateur Sass. La conversion est plus facile que si on utilise un fichier .sass
+
+</p>
+
+            
+        </section>
+    </main>
+
+    <footer id='pied-page'>
+        <section class="global">
+            
+            <ul class="caseLi">
+                <li>Lorem, ipsum</li>
+                <li>Soluta, distinctio</li>
+                <li>Non, praesentium</li>
+                <li>Cupiditate, deserunt</li>
+                <li>Error, laborum</li>
+            </ul>
+            <ul class="caseLi2">
+                <li>Dolore, architecto</li>
+                <li>Illo, ipsum</li>
+                <li>Impedit, laborum</li>
+                <li>Dolores, quisquam</li>
+                <li>Cupiditate, dolores</li>
+            </ul>
+            <ul class="caseLi3">
+                <li>Distinctio, iste</li>
+                <li>Porro, repellat</li>
+                <li>Cumque, eligendi</li>
+                <li>Suscipit, enim</li>
+                <li>Sapiente, impedit</li>
+            </ul>
+            <ul class="caseLi4">
+                <li>Voluptates, culpa</li>
+                <li>Harum, adipisci</li>
+                <li>Recusandae, ipsam</li>
+                <li>Delectus, dolores</li>
+                <li>Animi, voluptatum</li>
+            </ul>
+        </section>
+    </footer>
 </body>
-<footer>
-    <p>footer classique</p>
-    <p>Contenu ajouté école</p>
-</footer>
+<script>
+    window.addEventListener('load', function () {
+        let elmChkMenu = document.querySelector('#checkMenu')
+        let elmBtnMenu = document.querySelector('#btnMenu')
+
+        window.addEventListener('resize', function () {
+            // console.log(window.innerWidth)
+            if (window.innerWidth >= 500) {
+                elmChkMenu.checked = false
+            }
+        })
+    })
+    
+
+</script>
 </html>

@@ -1,0 +1,71 @@
+body {
+    width: 100vw;
+    min-height :100vh;
+    font-family: 'Roboto', sans-serif;
+    // le layout est entièrement flexbox
+    display: flex;
+    flex-direction: column;
+}
+
+header,
+nav,
+main,
+footer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+header {
+    z-index: 999;
+   // flex:1;
+}
+
+header,
+footer {
+    // chaque section pricipale une couleur en bg sur 100vw
+    background-color: lighten($couleur_rouge, 20%);
+}
+
+nav {
+    background-color: darken($couleur_rouge, 5%);
+}
+
+main {
+    
+    padding-top : 3em;
+    display : flex;
+    flex-direction: column; // pour pousser le footer en bas du viewport
+    align-items: center; // pour que la section .global soit centrée
+    justify-content: center;
+    flex : 1 1 auto; // pour pousser le footer en bas du viewport
+    background-color: lighten($couleur_rouge, 70%);
+    color :  darken($couleur_blanc, 30%);
+    
+    section {
+        display : flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        p {
+
+            flex : 1 1 20%;  // les paragraphes on une hauteur de 20%
+        }
+    }
+}
+
+
+
+.global {
+    width: 95%;
+
+}
+
+// ---------------------------------------------------------------- un premier point de rupture 
+@media screen and (min-width:600px) {
+    .global {
+        width: 80%;
+    }
+
+
+
+}

@@ -1,0 +1,75 @@
+#entete {
+    background-color:black;
+    width:100%;
+    
+    div{
+       width:100%;
+       display:flex;
+       justify-content: flex-end;
+       p{
+           padding-right:6%;
+       }
+    }
+}
+
+#inputRecherche{
+
+    position:absolute;
+    width:95%;
+    border:1px solid black;
+    height:32px;
+    background-color:rgba($color: #929292, $alpha: 0.9);
+    padding:3px;
+    z-index:-1;
+    opacity:0;
+    transition:1s all;
+}
+
+#checkRecherche:checked ~ #menu>#inputRecherche{
+    z-index:1;
+    opacity:1;
+    transition:1s all;
+}
+
+
+//ajout de différent breakpoint pour la résolution
+
+@media screen and (min-width: 500px)
+{
+    #entete {
+        background-color:black;
+        width:100%;
+        
+        div{
+           width:100%;
+           display:flex;
+           justify-content: flex-end;
+           p{
+               padding-right:5%;
+               width:25%;
+               display:flex;
+               justify-content: flex-end;
+           }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    #entete {
+        background-color:black;
+        width:100%;
+        
+        div{
+           width:100%;
+           display:flex;
+           justify-content: flex-end;
+           p{
+               padding-right:1%;
+               width:20%;
+               display:flex;
+               justify-content: flex-end;
+           }
+        }
+    }
+}

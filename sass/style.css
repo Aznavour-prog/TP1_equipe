@@ -34,27 +34,6 @@ License: GNU General Public License v2 or later
   opacity: 0.9;
 }
 
-.caseLi2 {
-  -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-          box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #520000;
-  opacity: 0.9;
-}
-
-.caseLi3 {
-  -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-          box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #864100;
-  opacity: 0.9;
-}
-
-.caseLi4 {
-  -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-          box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #644d00;
-  opacity: 0.9;
-}
-
 /*
   Le resultat CSS produit par SCSS
 
@@ -472,12 +451,18 @@ l'état checked est testé ici:
   cursor: pointer;
 }
 
+#btnRecherche {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+}
+
 #menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
-  top: 140px;
+  top: 110px;
   background-color: #381717;
   -webkit-box-align: start;
       -ms-flex-align: start;
@@ -536,18 +521,8 @@ l'état checked est testé ici:
 @media screen and (min-width: 500px) {
   #btnRecherche {
     position: absolute;
-    top: 21%;
-    left: 98.4%;
-    -webkit-transition: 1s all;
-    transition: 1s all;
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    padding: 1px;
-  }
-  #btnRecherche:hover {
-    background-color: #803535;
-    -webkit-transition: 1s all;
-    transition: 1s all;
+    top: 25%;
+    left: 25%;
   }
   #btnMenu {
     display: none;
@@ -589,25 +564,6 @@ l'état checked est testé ici:
   }
   #menu ul li a:hover {
     background-color: #803535;
-  }
-}
-
-@media screen and (max-width: 1000px) and (min-width: 500px) {
-  #btnRecherche {
-    position: absolute;
-    top: 27%;
-    left: 96%;
-    -webkit-transition: 1s all;
-    transition: 1s all;
-    -webkit-transform: scale(2);
-            transform: scale(2);
-    padding: 1px;
-  }
-  #btnRecherche:hover {
-    background-color: rgba(192, 127, 127, 0.7);
-    border-radius: 5px;
-    -webkit-transition: 1s all;
-    transition: 1s all;
   }
 }
 
@@ -779,16 +735,15 @@ en précédent notre extension avec «%»
 }
 
 #entete div p {
-  padding-right: 6%;
+  padding-right: 1%;
 }
 
 #inputRecherche {
   position: absolute;
   width: 95%;
-  border: 1px solid black;
-  height: 32px;
-  background-color: rgba(146, 146, 146, 0.9);
-  padding: 3px;
+  height: 33px;
+  background-color: rgba(146, 146, 146, 0.6);
+  padding: 2%;
   z-index: -1;
   opacity: 0;
   -webkit-transition: 1s all;
@@ -800,57 +755,5 @@ en précédent notre extension avec «%»
   opacity: 1;
   -webkit-transition: 1s all;
   transition: 1s all;
-}
-
-@media screen and (min-width: 500px) {
-  #entete {
-    background-color: black;
-    width: 100%;
-  }
-  #entete div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #entete div p {
-    padding-right: 5%;
-    width: 25%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  #entete {
-    background-color: black;
-    width: 100%;
-  }
-  #entete div {
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
-  #entete div p {
-    padding-right: 1%;
-    width: 20%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-  }
 }
 /*# sourceMappingURL=style.css.map */
