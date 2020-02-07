@@ -468,7 +468,7 @@ l'état checked est testé ici:
   transition: transform 1s;
   transition: transform 1s, -webkit-transform 1s;
   left: 10px;
-  top: 5px;
+  top: 41px;
   cursor: pointer;
 }
 
@@ -494,7 +494,7 @@ l'état checked est testé ici:
   margin-left: -20px;
   padding-left: 20px;
   padding-bottom: 20px;
-  margin-top: 32px;
+  margin-top: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -595,8 +595,8 @@ l'état checked est testé ici:
 @media screen and (max-width: 1000px) and (min-width: 500px) {
   #btnRecherche {
     position: absolute;
-    top: 27%;
-    left: 96%;
+    top: 47%;
+    left: 94%;
     -webkit-transition: 1s all;
     transition: 1s all;
     -webkit-transform: scale(2);
@@ -608,6 +608,12 @@ l'état checked est testé ici:
     border-radius: 5px;
     -webkit-transition: 1s all;
     transition: 1s all;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  #btnRecherche {
+    display: none;
   }
 }
 
@@ -784,7 +790,7 @@ en précédent notre extension avec «%»
 
 #inputRecherche {
   position: absolute;
-  width: 95%;
+  width: 90%;
   border: 1px solid black;
   height: 32px;
   background-color: rgba(146, 146, 146, 0.9);
@@ -825,6 +831,24 @@ en précédent notre extension avec «%»
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
+  }
+  #inputRecherche {
+    position: absolute;
+    width: 95%;
+    border: 1px solid black;
+    height: 32px;
+    background-color: rgba(146, 146, 146, 0.9);
+    padding: 3px;
+    z-index: -1;
+    opacity: 0;
+    -webkit-transition: 1s all;
+    transition: 1s all;
+  }
+  #checkRecherche:checked ~ #menu > #inputRecherche {
+    z-index: 1;
+    opacity: 1;
+    -webkit-transition: 1s all;
+    transition: 1s all;
   }
 }
 

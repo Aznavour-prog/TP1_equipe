@@ -39,7 +39,7 @@ l'état checked est testé ici:
     height : 32px;
     transition: transform 1s;
     left :10px;
-    top : 5px;
+    top : 41px;
     cursor: pointer ;
 }
 
@@ -60,7 +60,7 @@ l'état checked est testé ici:
          margin-left : -20px;
         padding-left:20px;
         padding-bottom: 20px;
-        margin-top : 32px;
+        margin-top : 15%;
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -90,6 +90,7 @@ l'état checked est testé ici:
         }
     }
 }
+
 
 // ---------------------------------------------------------------- un premier point de rupture 
 // uniquement pour le menu
@@ -152,8 +153,8 @@ l'état checked est testé ici:
     #btnRecherche{
  
         position:absolute;
-        top:27%;
-        left:96%;
+        top:47%;
+        left:94%;
         transition:1s all;
         transform:scale(2);
         padding:1px;
@@ -164,5 +165,11 @@ l'état checked est testé ici:
         border-radius:5px;
         transition:1s all;
         
+    }
+}
+
+@media screen and (max-width:500px){
+    #btnRecherche{
+        display:none;
     }
 }
