@@ -536,7 +536,7 @@ l'état checked est testé ici:
 @media screen and (min-width: 500px) {
   #btnRecherche {
     position: absolute;
-    top: 21%;
+    top: 26.8%;
     left: 98.4%;
     -webkit-transition: 1s all;
     transition: 1s all;
