@@ -522,7 +522,8 @@ l'état checked est testé ici:
 #menu ul li a {
   text-decoration: none;
   display: block;
-  padding: 6px 3px 3px 30px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
   color: #b3afaf;
 }
 

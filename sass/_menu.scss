@@ -76,8 +76,8 @@ l'état checked est testé ici:
             a {
                 text-decoration: none;
                 display: block;
-                padding: 6px 3px 3px 30px;
-               
+                
+                transition:background-color 1s;
                 color : $couleur_blanc;
                 &:hover {
                     background-color: lighten($couleur_rouge, 20%);
