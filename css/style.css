@@ -357,10 +357,6 @@ footer {
           justify-content: center;
 }
 
-header {
-  z-index: 999;
-}
-
 header,
 footer {
   background-color: #a44444;
