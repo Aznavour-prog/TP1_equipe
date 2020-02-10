@@ -28,11 +28,25 @@ class oRectangleanimerDown{
         oSectionGlobal.appendChild(oRectangle);
         var objet = this;
         setTimeout(function(){
+            objet.changebackground(oRectangle);
+        },1300);
+        setTimeout(function(){
             objet.animeRectangle(oRectangle,iInterval);
-        },3000);
+        },2800);
         //this.animeRectangle(oRectangle, iInterval);
     }
-
+    changebackground(oRectangle){
+        oRectangle.style.transition = "background-color 1s";
+        oRectangle.style.backgroundColor = "lightgrey";
+        var objet = this
+        setTimeout(function(){
+            objet.changebackground2(oRectangle);
+        },1000);
+    }
+    changebackground2(oRectangle){
+        oRectangle.style.transition = "background-color 1s";
+        oRectangle.style.backgroundColor = "black";
+    }
     animeRectangle(oRectangle, iInterval){
     
         
