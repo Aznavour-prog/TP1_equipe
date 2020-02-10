@@ -29,7 +29,7 @@ class oRectangleanimer{
         var objet = this;
         setTimeout(function(){
             objet.changebackground(oRectangle);
-        },1300);
+        },1450);
         setTimeout(function(){
             objet.animeRectangle(oRectangle,iInterval);
         },2800);
@@ -42,7 +42,7 @@ class oRectangleanimer{
         var objet = this
         setTimeout(function(){
             objet.changebackground2(oRectangle);
-        },1000);
+        },800);
     }
     changebackground2(oRectangle){
         oRectangle.style.transition = "background-color 1s";

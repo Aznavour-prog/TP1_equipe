@@ -73,10 +73,10 @@ class oRectangleanimerHorizontal{
         console.log(iIntervalHauteur);
         iInterval+= 0.8;
         var iIntervalScale = 1;
-        if(iInterval <95){
+        if(iInterval <=99){
             this.recallAnimation(oRectangle,iInterval,iIntervalHauteur);
         }
-        else if(iInterval >=95){
+        else if(iInterval >99){
             this.callAnimation2(oRectangle,iIntervalScale,iIntervalHauteur);
         }
     }
