@@ -22,6 +22,7 @@ class oRectangleanimerDown{
         oRectangle.style.top = this.posY + "%";
         oRectangle.style.left = this.posX;
         oRectangle.style.backgroundColor = "black";
+        oRectangle.style.transformOrigin = "bottom center";
         oRectangle.style.zIndex = 2;
         oRectangle.classList.add("rectangleIntro");
         oSectionGlobal.appendChild(oRectangle);
@@ -34,11 +35,11 @@ class oRectangleanimerDown{
 
     animeRectangle(oRectangle, iInterval){
     
-        oRectangle.style.height = this.hauteur - iInterval + "%";
-        oRectangle.style.transform = "translate(0px," + (iInterval * 9.08) + "px)";
+        
+        oRectangle.style.transform = "scaleY("+iInterval + ")";
         console.log(oRectangle.style.transform);
-        iInterval++;
-        if(oRectangle.style.height != "0%"){
+        iInterval-= 0.02;
+        if(iInterval >= -0.01){
             this.recallAnimation(oRectangle,iInterval);
         }
     }
