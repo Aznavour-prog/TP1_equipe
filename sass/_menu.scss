@@ -105,6 +105,7 @@ l'état checked est testé ici:
         transition:1s all;
         transform:scale(2);
         padding:1px;
+        user-select: none;
     }
     //ajout d'un hover 
     #btnRecherche:hover{
@@ -153,11 +154,12 @@ l'état checked est testé ici:
     #btnRecherche{
  
         position:absolute;
-        top:28%;
+        top:29%;
         left:94%;
         transition:1s all;
         transform:scale(2);
         padding:1px;
+        user-select: none;
     }
 
     #btnRecherche:hover{

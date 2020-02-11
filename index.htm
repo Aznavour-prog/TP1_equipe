@@ -26,7 +26,7 @@
     
     <div id='entete'><div><p class='small-uppercase'>Agenda de Victor Cyr-Desmeules</p></div></div>
     <input id="checkRecherche" type="checkbox">
-    
+    <label id="btnRecherche" for="checkRecherche">&#x1F50E;</label>
     <nav id='menu'>
             <input type="text" id="inputRecherche" placeholder="recherche ici">
             <input id="checkMenu" type="checkbox">
@@ -54,29 +54,24 @@
         <div class="slider">
             <div class="slides">
                 <div id="slide-1">
-                   <h2>Intro au css-slider</h2>
-                    <p>Petit slider CSS</p>
-                    
+                   <img src="/img/3.jpg">
+                    <h2>TP de 3D</h2>
 
                 </div>
                 <div id="slide-2">
-                    2
+                    <img src="/img/2.png">
+                    <h2>TP de Programmation et Veille technologique</h2>
                 </div>
                 <div id="slide-3">
-                    3
+                    <img src="/img/3.png">
+                    <h2>TP de vidéo</h2>
                 </div>
-                <div id="slide-4">
-                    4
-                </div>
-                <div id="slide-5">
-                    5
-                </div>
+                
             </div>
             <a href="#slide-1">1</a>
             <a href="#slide-2">2</a>
             <a href="#slide-3">3</a>
-            <a href="#slide-4">4</a>
-            <a href="#slide-5">5</a>
+            
         </div>
              </section>
 </main>
@@ -129,8 +124,20 @@
         footer.style.display = "none";
         setTimeout(function(){
             footer.style.display = "flex";
-
+            footer.style.opacity = 1;
         },4000);
+
+        let slider = document.querySelector(".mon-slider");
+        slider.style.display = "none";
+        
+        setTimeout(function(){
+            slider.style.display = "flex";
+            
+        },4000);
+        setTimeout(function(){
+                slider.style.transition = "all 0.5";
+                slider.style.opacity = 1;
+        },4002);
     })
     var oRectangle = new oRectangleanimer(50,100,0,0);
     var oRectangle2 = new oRectangleanimerDown(50,100,0,50);

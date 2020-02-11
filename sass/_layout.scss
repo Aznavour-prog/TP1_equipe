@@ -32,7 +32,7 @@ nav {
 
 main {
     
-    padding-top : 3em;
+    
     display : flex;
     flex-direction: column; // pour pousser le footer en bas du viewport
     align-items: center; // pour que la section .global soit centrée
@@ -40,7 +40,7 @@ main {
     flex : 1 1 auto; // pour pousser le footer en bas du viewport
     background-color: lighten($couleur_rouge, 70%);
     color :  darken($couleur_blanc, 30%);
-    
+    height:580px;
     section {
         display : flex;
         flex-direction: column;
@@ -57,13 +57,14 @@ main {
 
 .global {
     width: 95%;
-
+    height:100%;
 }
 
 // ---------------------------------------------------------------- un premier point de rupture 
 @media screen and (min-width:600px) {
     .global {
         width: 80%;
+        height:100%;
     }
 
 

@@ -6,7 +6,9 @@ desktop : 4 colonnes
 
 
 #pied-page{
-    
+    display:"flex";
+    opacity:1;
+    transition:1s all;
     padding-top : 30px;
     padding-bottom: 30px;
     color : lighten($couleur_blanc,10%);

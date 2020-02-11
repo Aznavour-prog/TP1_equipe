@@ -367,7 +367,6 @@ nav {
 }
 
 main {
-  padding-top: 3em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -386,6 +385,7 @@ main {
           flex: 1 1 auto;
   background-color: #f8efef;
   color: #676262;
+  height: 580px;
 }
 
 main section {
@@ -411,11 +411,13 @@ main section p {
 
 .global {
   width: 95%;
+  height: 100%;
 }
 
 @media screen and (min-width: 600px) {
   .global {
     width: 80%;
+    height: 100%;
   }
 }
 
@@ -546,6 +548,10 @@ l'état checked est testé ici:
     -webkit-transform: scale(2);
             transform: scale(2);
     padding: 1px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   #btnRecherche:hover {
     background-color: #803535;
@@ -598,13 +604,17 @@ l'état checked est testé ici:
 @media screen and (max-width: 1000px) and (min-width: 500px) {
   #btnRecherche {
     position: absolute;
-    top: 28%;
+    top: 29%;
     left: 94%;
     -webkit-transition: 1s all;
     transition: 1s all;
     -webkit-transform: scale(2);
             transform: scale(2);
     padding: 1px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
   }
   #btnRecherche:hover {
     background-color: rgba(192, 127, 127, 0.7);
@@ -638,6 +648,10 @@ tablette : 2 colonnes
 desktop : 4 colonnes
 */
 #pied-page {
+  display: "flex";
+  opacity: 1;
+  -webkit-transition: 1s all;
+  transition: 1s all;
   padding-top: 30px;
   padding-bottom: 30px;
   color: #ccc9c9;
@@ -894,27 +908,38 @@ en précédent notre extension avec «%»
 # Slider 
 ---------------------------------------------------------------- */
 .mon-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  -webkit-transition: all 1s;
+  transition: all 1s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#74ABE2), to(#5563DE));
-  background: linear-gradient(to bottom, #74ABE2, #5563DE);
+  background-color: lightcoral;
   font-family: 'Ropa Sans', sans-serif;
   overflow: hidden;
   width: 100%;
   height: 400px;
 }
 
+img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
 .slider {
   width: 300px;
   text-align: center;
   overflow: hidden;
+  border-radius: 25px;
 }
 
 .slides {
@@ -926,10 +951,30 @@ en précédent notre extension avec «%»
       scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
+  margin-bottom: 3%;
   /*
 scroll-snap-points-x: repeat(300px);
 scroll-snap-type: mandatory;
 */
+}
+
+.slides div:hover {
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.slides div:hover img {
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  border-radius: 25px;
+}
+
+.slides div:hover h2 {
+  z-index: 2;
 }
 
 .slides div {
@@ -944,6 +989,8 @@ scroll-snap-type: mandatory;
 
 .slides div h2 {
   font-size: 1.5rem;
+  color: white;
+  width: 80%;
 }
 
 .slides div p {
@@ -956,8 +1003,9 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-  background: #813939;
+  background: #f80000;
   border-radius: 10px;
+  border: 1px solid black;
 }
 
 .slides::-webkit-scrollbar-track {
@@ -982,6 +1030,7 @@ scroll-snap-type: mandatory;
   transition: transform 0.5s;
   transition: transform 0.5s, -webkit-transform 0.5s;
   position: relative;
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1010,16 +1059,6 @@ scroll-snap-type: mandatory;
   color: white;
 }
 
-img {
-  -o-object-fit: cover;
-     object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
 .slider > a {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -1037,6 +1076,7 @@ img {
   border-radius: 50%;
   margin: 0 0 0.5rem 0;
   position: relative;
+  margin-left: 2%;
 }
 
 .slider > a:active {
@@ -1059,14 +1099,16 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  opacity: 0;
+  -webkit-transition: opacity 1s;
+  transition: opacity 1s;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: -webkit-gradient(linear, left top, left bottom, from(#74ABE2), to(#5563DE));
-  background: linear-gradient(to bottom, #74ABE2, #5563DE);
+  background-color: #773333;
   font-family: 'Ropa Sans', sans-serif;
   overflow: hidden;
 }

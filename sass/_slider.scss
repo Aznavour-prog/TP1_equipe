@@ -1,20 +1,32 @@
 .mon-slider {
-    display: flex;
+    
+    transition:all 1s;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    background-color:lightcoral;
     font-family: 'Ropa Sans', sans-serif;
     overflow: hidden;
     width: 100%;
     height :400px;
     
 }
+img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition:1s all;
+}
+
 
 
 .slider {
     width: 300px;
     text-align: center;
     overflow: hidden;
+    border-radius:25px;
 }
 
 .slides {
@@ -23,15 +35,30 @@
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+    margin-bottom:3%;
     /*
 scroll-snap-points-x: repeat(300px);
 scroll-snap-type: mandatory;
 */
+    div:hover{
+        transition:1s all;
+        img {
+            filter:brightness(0.5);
+            transition:all 0.5s;
+            transform:scale(0.9);
+            border-radius:25px;
+        }
+        h2{
+            z-index:2;
+        }
+    }
     div{
         display : flex;
         flex-direction : column;
         h2 {
             font-size: 1.5rem;
+            color:white;
+            width:80%;
         }
         p{
             font-size :1rem
@@ -45,8 +72,9 @@ scroll-snap-type: mandatory;
 }
 
 .slides::-webkit-scrollbar-thumb {
-    background: rgb(129, 57, 57);
+    background: rgb(248, 0, 0);
     border-radius: 10px;
+    border:1px solid black;
 }
 
 .slides::-webkit-scrollbar-track {
@@ -65,7 +93,7 @@ scroll-snap-type: mandatory;
     transform: scale(1);
     transition: transform 0.5s;
     position: relative;
-
+    margin-bottom:5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,14 +118,7 @@ scroll-snap-type: mandatory;
     color: white;
 }
 
-img {
-    object-fit: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
+
 
 .slider>a {
     display: inline-flex;
@@ -110,6 +131,7 @@ img {
     border-radius: 50%;
     margin: 0 0 0.5rem 0;
     position: relative;
+    margin-left:2%;
 }
 
 .slider>a:active {
@@ -132,9 +154,11 @@ img {
 
 .mon-slider {
     display: flex;
+    opacity:0;
+    transition:opacity 1s;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to bottom, #74ABE2, #5563DE);
+    background-color:rgb(119, 51, 51);
     font-family: 'Ropa Sans', sans-serif;
      overflow: hidden;
 }
