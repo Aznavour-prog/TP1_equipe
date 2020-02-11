@@ -39,9 +39,10 @@ class oRectangleanimerHorizontal{
     animeColor(oRectangle){
         oRectangle.style.transition = "background-color 1s";
         oRectangle.style.backgroundColor = "black";
+        var objet = this;
         setTimeout(function(){
             objet.animeColor2(oRectangle);
-        },500);
+        },900);
     }
     animeColor2(oRectangle){
         oRectangle.style.backgroundColor = "white";
