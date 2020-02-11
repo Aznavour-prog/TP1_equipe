@@ -15,14 +15,6 @@ l'état checked est testé ici:
     transform: rotate(90deg) ;
     color : #0f0;
 }
-#recherche{
-    display:none;
-}
-
-
-#checkRecherche{
-    display:none;
-}
 
 #checkMenu {
     display : none;
@@ -39,28 +31,24 @@ l'état checked est testé ici:
     height : 32px;
     transition: transform 1s;
     left :10px;
-    top : 41px;
-    cursor: pointer ;
+    top : 5px;
+    cursor : pointer;
 }
 
 #menu {
     display: flex;
     position: absolute;
-    top : 140px;
+    top : 110px;
     background-color: darken($couleur_rouge,10%) ;
     align-items: flex-start;
     height : 40px;
 
     ul {
-        -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
         width : 100vw;
          margin-left : -20px;
         padding-left:20px;
         padding-bottom: 20px;
-        margin-top : 15%;
+        margin-top : 32px;
         display: flex;
         flex-direction: column;
         list-style-type: none;
@@ -68,16 +56,16 @@ l'état checked est testé ici:
         height : auto; // la hauteur nécessaire pour afficher uniquement les choix de menu 
         transition : max-height 1s; // max-height sera animé
         background-color: darken($couleur_rouge, 10%); // une couleur bg est donnée à ul
-        overflow: hidden; // pour empêcher les li d'être visible quand le menu est fermé
+   
         li {            
             opacity :0;
-            
+            transition : opacity .5s;
             transition : opacity 1s;
             a {
                 text-decoration: none;
                 display: block;
-                
-                transition:background-color 1s;
+                padding: 6px 3px 3px 30px;
+               
                 color : $couleur_blanc;
                 &:hover {
                     background-color: lighten($couleur_rouge, 20%);
@@ -91,40 +79,23 @@ l'état checked est testé ici:
     }
 }
 
-
 // ---------------------------------------------------------------- un premier point de rupture 
 // uniquement pour le menu
 @media screen and (min-width:500px) {
-    
-    //style pour le bouton de recherche non mobile
-    #btnRecherche{
- 
-        position:absolute;
-        top:26.8%;
-        left:98.4%;
-        transition:1s all;
-        transform:scale(2);
-        padding:1px;
+    #btnMenu {
+        display : none;
     }
-    //ajout d'un hover 
-    #btnRecherche:hover{
-        background-color:lighten($couleur_rouge, 10%);
-        
-        transition:1s all;
-    }
-        #btnMenu {
-            display : none;
-        }
 
     #menu {
             position: static;
-           
             flex-direction: row;
         ul {
+            position : static;
+            border : 1px solid #aaa;
             height: 26px;
             margin : 0;
             margin-left : 2%;
-            overflow:visible;
+            z-index: 2;
             flex-direction: row;
             justify-content: space-around;
             opacity:1;
@@ -145,41 +116,5 @@ l'état checked est testé ici:
                 }
             }
         }
-    }
-}
-
-@media screen and (max-width: 1000px) and (min-width:500px) {
-    //ajout d'un autre style css pour le bouton de recherche (j'aurais pu faire un autre breakpoint dans menu.scss mais j'aimais mieux avoir moins de ligne)
-    #btnRecherche{
- 
-        position:absolute;
-        top:28%;
-        left:94%;
-        transition:1s all;
-        transform:scale(2);
-        padding:1px;
-    }
-
-    #btnRecherche:hover{
-        background-color:rgba(192, 127, 127,0.7);
-        border-radius:5px;
-        transition:1s all;
-        
-    }
-}
-
-@media screen and (max-width:500px){
-    #btnRecherche{
-        display:none;
-    }
-
-    #menu{
-        background-color:transparent;
-    }
-    ul{
-        padding-top:3%;
-    }
-    li{
-        padding-left: 2%;
     }
 }

@@ -50,8 +50,37 @@
             <div class="objetAnimer1"></div>
         </section>
     </main>
+    <section class="mon-slider">
+        <div class="slider">
+            <div class="slides">
+                <div id="slide-1">
+                   <h2>Intro au css-slider</h2>
+                    <p>Petit slider CSS</p>
+                    
 
-    <footer id='pied-page'>
+                </div>
+                <div id="slide-2">
+                    2
+                </div>
+                <div id="slide-3">
+                    3
+                </div>
+                <div id="slide-4">
+                    4
+                </div>
+                <div id="slide-5">
+                    5
+                </div>
+            </div>
+            <a href="#slide-1">1</a>
+            <a href="#slide-2">2</a>
+            <a href="#slide-3">3</a>
+            <a href="#slide-4">4</a>
+            <a href="#slide-5">5</a>
+        </div>
+             </section>
+</main>
+    <footer id='pied-page' >
         <section class="global">
             
             <ul class="caseLi">
@@ -95,7 +124,13 @@
             if (window.innerWidth >= 500) {
                 elmChkMenu.checked = false
             }
-        })
+        });
+        let footer = document.querySelector("#pied-page");
+        footer.style.display = "none";
+        setTimeout(function(){
+            footer.style.display = "flex";
+
+        },4000);
     })
     var oRectangle = new oRectangleanimer(50,100,0,0);
     var oRectangle2 = new oRectangleanimerDown(50,100,0,50);
