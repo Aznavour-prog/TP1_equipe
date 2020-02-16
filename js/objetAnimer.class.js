@@ -12,7 +12,7 @@ class oRectangleanimer{
 
 
     dessineRectangle(hauteur,largeur){
-        var oSectionGlobal = document.querySelectorAll(".global")[1];
+        var oSectionGlobal = document.querySelectorAll(".global")[0];
         var iInterval = 1;
         console.log(oSectionGlobal);
         var oRectangle = document.createElement("div");

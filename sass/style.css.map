@@ -8,11 +8,15 @@
         "_extend.scss",
         "_element.scss",
         "_layout.scss",
-        "_menu.scss",
+       
         "_pied-page.scss",
         "_extend.scss",
         "_entete.scss",
-        "_slider.scss"
+        "_typography.scss",
+        "_normalize.scss",
+        "_navigation.scss",
+        "_caroussel.scss",
+        "_main.scss"
     ],
     "names": [],
     "file": "style.css"

@@ -1,75 +1,60 @@
 body {
+
+    background-color: $couleur_sombre;
     width: 100%;
-    min-height :100vh;
-    font-family: 'Roboto', sans-serif;
-    // le layout est entièrement flexbox
+    height: 100vh;
+    margin: 0 auto;
+    font-family: "Landasans";
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 
-header,
-nav,
-main,
-footer {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
 header {
-    //z-index: 999;
-    padding-bottom:2%;
-    box-shadow: inset 0 0 15px rgb(0, 0, 0);
-   // flex:1;
-}
 
-header,
-footer {
-    // chaque section pricipale une couleur en bg sur 100vw
-    background-color: lighten($couleur_rouge, 20%);
+    width: 100%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    height: 300px;
+    z-index: -1;
+    margin-bottom:5%;
 }
 
 nav {
-    background-color: darken($couleur_rouge, 5%);
+
+    width: 100%;
+    height: auto;
+
+    ul {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+    }
+
 }
 
 main {
-    
-    
-    display : flex;
-    flex-direction: column; // pour pousser le footer en bas du viewport
-    align-items: center; // pour que la section .global soit centrée
+
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items:center; 
+    flex-direction: column;
     justify-content: center;
-    flex : 1 1 auto; // pour pousser le footer en bas du viewport
-    background-color: lighten($couleur_noir, 20%);
-    color :  darken($couleur_blanc, 15%);
-    height:530px;
-    
-    section {
-        display : flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: flex-start;
-        p {
+    letter-spacing: 1px;
+    margin-top: 400px;
+   
+    h1 {
 
-            flex : 1 1 20%;  // les paragraphes on une hauteur de 20%
-        }
+        font-size: 2.5em;
+
     }
-}
-
-
-
-.global {
-    width: 95%;
-    height:100%;
-}
-
-// ---------------------------------------------------------------- un premier point de rupture 
-@media screen and (min-width:600px) {
-    .global {
-        width: 80%;
-        height:100%;
-    }
-
-
 
 }

@@ -12,7 +12,7 @@ class oRectangleanimerHorizontal{
 
 
     dessineRectangle(hauteur,largeur){
-        var oSectionGlobal = document.querySelectorAll(".global")[1];
+        var oSectionGlobal = document.querySelectorAll(".global")[0];
         var iInterval = 1;
         console.log(oSectionGlobal);
         var oRectangle = document.createElement("div");
@@ -23,7 +23,7 @@ class oRectangleanimerHorizontal{
         oRectangle.style.top = this.posY + "%";
         oRectangle.style.left = this.posX;
         oRectangle.style.backgroundColor = "white";
-        oRectangle.style.zIndex = 3;
+        oRectangle.style.zIndex = 5;
         
         oRectangle.classList.add("rectangleIntro");
         oSectionGlobal.appendChild(oRectangle);
