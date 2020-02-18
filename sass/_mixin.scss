@@ -6,7 +6,17 @@
   box-shadow: 5px 10px rgba($color: #979797, $alpha: 0.5);
   border:3px solid white;
   }
-
+  @mixin day(){
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    border:1px solid black;
+    border-radius:25px;
+    padding-top:3%;
+    transition:letter-spacing 1s;
+    &:hover{
+        letter-spacing: 3px;
+    }
+}
   /* ---------------------------------------- */ 
   // On peut ensuite utiliser un mixin 
   // en utilisant la directive @include

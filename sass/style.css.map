@@ -8,7 +8,6 @@
         "_extend.scss",
         "_element.scss",
         "_layout.scss",
-       
         "_pied-page.scss",
         "_extend.scss",
         "_entete.scss",
@@ -16,7 +15,8 @@
         "_normalize.scss",
         "_navigation.scss",
         "_caroussel.scss",
-        "_main.scss"
+        "_main.scss",
+        "_grid.scss"
     ],
     "names": [],
     "file": "style.css"

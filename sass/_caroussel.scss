@@ -112,3 +112,9 @@ img:hover{
 	}
 
 }
+
+@media screen and (max-width: 600px){
+	.div_controls {
+		display:none;
+	}
+}
