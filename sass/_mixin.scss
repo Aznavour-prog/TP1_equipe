@@ -3,7 +3,7 @@
 /* ----------------------------------------- */
 
 @mixin overlay() {
-  box-shadow: 5px 10px rgba($color: #979797, $alpha: 0.5);
+  box-shadow: 5px 10px rgba($color: #979797, $alpha: 0.1);
   border:3px solid white;
   }
 
