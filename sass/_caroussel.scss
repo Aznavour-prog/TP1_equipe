@@ -12,10 +12,24 @@
 .mySlides {
 
 	display: none;
-	transition: display 0.5s;
-
+	transition: all 0.5s;
+	margin-bottom:8%;
 }
 
+.mySlides:hover{
+	transform:scale(0.9);
+	transition:all 0.5s;
+	
+}
+img{
+	transition:all 0.5s;
+	border:1px solid white;
+}
+img:hover{
+	border-radius:25px;
+	transition:all 0.5s;
+	border:3px solid white;
+}
 .div_controls {
 
 	display: flex;

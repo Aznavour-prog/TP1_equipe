@@ -1008,8 +1008,29 @@ header {
 
 .mySlides {
   display: none;
-  -webkit-transition: display 0.5s;
-  transition: display 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  margin-bottom: 8%;
+}
+
+.mySlides:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+img {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 1px solid white;
+}
+
+img:hover {
+  border-radius: 25px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  border: 3px solid white;
 }
 
 .div_controls {
