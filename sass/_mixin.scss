@@ -4,6 +4,7 @@
 
 @mixin overlay() {
   box-shadow: 5px 10px rgba($color: #979797, $alpha: 0.5);
+  border:3px solid white;
   }
 
   /* ---------------------------------------- */ 
@@ -21,18 +22,20 @@
 
   .caseLi2{
     @include overlay();
-    background-color: rgb(82, 0, 0);
+    background-color: rgb(170, 170, 170);
     opacity: 0.9;
+    color:black;
   }
   .caseLi3{
     @include overlay();
-    background-color: rgb(134, 65, 0);
+    background-color: rgb(126, 126, 126);
     opacity: 0.9;
   }
   .caseLi4{
     @include overlay();
-    background-color: rgb(100, 77, 0);
+    background-color: rgb(209, 209, 209);
     opacity: 0.9;
+    color:black;
   }
 
   /*

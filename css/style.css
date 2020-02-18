@@ -377,6 +377,7 @@ template {
 .caseLi {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
+  border: 3px solid white;
   background-color: black;
   opacity: 0.9;
 }
@@ -384,22 +385,27 @@ template {
 .caseLi2 {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #520000;
+  border: 3px solid white;
+  background-color: #aaaaaa;
   opacity: 0.9;
+  color: black;
 }
 
 .caseLi3 {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #864100;
+  border: 3px solid white;
+  background-color: #7e7e7e;
   opacity: 0.9;
 }
 
 .caseLi4 {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
-  background-color: #644d00;
+  border: 3px solid white;
+  background-color: #d1d1d1;
   opacity: 0.9;
+  color: black;
 }
 
 /*
@@ -427,16 +433,19 @@ Le mixin précédent peut être réutilisé dans d'autres règles:
 .modal-background {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
+  border: 3px solid white;
 }
 
 .product-link {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
+  border: 3px solid white;
 }
 
 .image-pattern {
   -webkit-box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
           box-shadow: 5px 10px rgba(151, 151, 151, 0.5);
+  border: 3px solid white;
 }
 
 /* ------------------------------------------------------------------------------  
@@ -755,7 +764,7 @@ desktop : 4 colonnes
       -ms-flex: 1;
           flex: 1;
   text-align: center;
-  border: 3px dotted #993f3f;
+  border: 3px solid lightgrey;
 }
 
 #pied-page ul li {
@@ -893,6 +902,7 @@ header {
   -webkit-filter: brightness(200%);
           filter: brightness(200%);
   position: absolute;
+  margin-top: 2%;
 }
 
 #inputRecherche {
