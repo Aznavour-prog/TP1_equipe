@@ -1077,6 +1077,10 @@ img:hover {
   background-color: white;
 }
 
+.slider_btns:active {
+  background-color: black;
+}
+
 .fadeOut {
   /*transition: filter 1s;
 	filter: brightness(0%);*/
